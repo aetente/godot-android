@@ -1,0 +1,59 @@
+[gd_scene format=3 uid="uid://62basw0id2vr"]
+
+[ext_resource type="Texture2D" uid="uid://nsfw6w6fwx4r" path="res://sprites/fire/Untitled8_20260525144405.png" id="1_05d0c"]
+[ext_resource type="Texture2D" uid="uid://bb5865ld7bjhf" path="res://sprites/fire/Untitled8_20260525145744.png" id="2_qhy6t"]
+[ext_resource type="Texture2D" uid="uid://830hrimohtpw" path="res://res/img/Burning grass/Untitled8_20260525145414.png" id="3_djtf0"]
+[ext_resource type="Texture2D" uid="uid://bpyhcbdpey6og" path="res://sprites/fire/Untitled8_20260525151201.png" id="3_qhy6t"]
+[ext_resource type="Texture2D" uid="uid://33b4txwrre3f" path="res://res/img/Burning grass/Untitled8_20260525145458.png" id="4_tv86p"]
+[ext_resource type="Texture2D" uid="uid://dcr5q3kbjjpjg" path="res://res/img/Burning grass/Untitled8_20260525151240.png" id="6_djtf0"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_mwfoc"]
+animations = [{
+"frames": [{
+"duration": 0.5,
+"texture": ExtResource("1_05d0c")
+}, {
+"duration": 1.0,
+"texture": ExtResource("2_qhy6t")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_qhy6t")
+}, {
+"duration": 1.0,
+"texture": ExtResource("2_qhy6t")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[sub_resource type="Environment" id="Environment_05d0c"]
+background_mode = 1
+background_color = Color(1.528944e-07, 1.5289442e-07, 1.5289442e-07, 1)
+ambient_light_color = Color(1, 1, 1, 1)
+
+[node name="Node3D" type="Node3D" unique_id=1893920826]
+
+[node name="AnimatedSprite3D" type="AnimatedSprite3D" parent="." unique_id=1620156407]
+sprite_frames = SubResource("SpriteFrames_mwfoc")
+autoplay = "default"
+frame_progress = 0.791931
+
+[node name="Sprite3D" type="Sprite3D" parent="." unique_id=1682082826]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -1.1962633)
+texture = ExtResource("3_djtf0")
+
+[node name="Sprite3D2" type="Sprite3D" parent="." unique_id=91612284]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0.38554573)
+visible = false
+texture = ExtResource("4_tv86p")
+
+[node name="Sprite3D3" type="Sprite3D" parent="." unique_id=1685442053]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0.26741886)
+texture = ExtResource("6_djtf0")
+
+[node name="Camera3D" type="Camera3D" parent="." unique_id=306300389]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 10.971402)
+
+[node name="WorldEnvironment" type="WorldEnvironment" parent="." unique_id=1559633392]
+environment = SubResource("Environment_05d0c")
