@@ -5,7 +5,7 @@
 [ext_resource type="Texture2D" uid="uid://830hrimohtpw" path="res://res/img/Burning grass/Untitled8_20260525145414.png" id="3_djtf0"]
 [ext_resource type="Texture2D" uid="uid://bpyhcbdpey6og" path="res://sprites/fire/Untitled8_20260525151201.png" id="3_qhy6t"]
 [ext_resource type="Texture2D" uid="uid://33b4txwrre3f" path="res://res/img/Burning grass/Untitled8_20260525145458.png" id="4_tv86p"]
-[ext_resource type="Texture2D" uid="uid://dcr5q3kbjjpjg" path="res://res/img/Burning grass/Untitled8_20260525151240.png" id="6_djtf0"]
+[ext_resource type="Texture2D" uid="uid://faobdee54mwa" path="res://res/img/Burning grass/Front grass 6.png" id="6_djtf0"]
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_mwfoc"]
 animations = [{
